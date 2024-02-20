@@ -33,7 +33,7 @@ nav {
     padding: 0.6rem;
     padding-inline: 4rem;
     position: sticky;
-    /* top: 0; */
+    top: 0;
     /* width: 100%; */
 }
 
