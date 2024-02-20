@@ -19,11 +19,6 @@ h1, h2 {
 }
 
 /* Header */
-.jumbotron h1 {
-    font-size: 4em;
-    color: #ff8303;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -77,6 +72,11 @@ h2.logo {
     /* opacity: .5; */
     text-align: center;
     /* color: white; */
+}
+
+.jumbotron h1 {
+    font-size: 4em;
+    color: #ff8303;
 }
 
 .jumbotron p {
