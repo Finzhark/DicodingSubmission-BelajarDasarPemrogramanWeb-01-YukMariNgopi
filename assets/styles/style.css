@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Tahoma, sans-serif;
+    background-color: #F0E3CA;
+    margin: 0;
+    padding: 0;
+}
+
+main h2 {
+    font-size: 2em;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-family: "Caveat Brush", Verdana, Tahoma, sans-serif;
+}
+
+/* Header */
+.jumbotron h1 {
+    font-size: 4em;
+    color: #ff8303;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #1B1A17;
+    color: #F0E3CA;
+    padding: 0.6rem 2rem;
+
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #F0E3CA;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav a:focus {color: blue;}
+
+nav a:active {
+    color: white;
+}
+
+h2.logo {
+    color: #ff8303;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 7rem;
+    height: 100vh;
+    background-image: linear-gradient(rgba(27, 26, 23, 0.75), rgba(27, 26, 23, 0.75)), url("../images/biji-kopi.jpg");
+    background-color: #1B1A17;
+    /* opacity: .5; */
+    text-align: center;
+    /* color: white; */
+}
+
+.jumbotron p {
+    padding: 0 13em;
+    color: #F0E3CA;
+}
+
+header {
+    display: inline;
+}
+
+/* Main */
+article h2 {
+    text-align: center;
+}
+
+main, aside {
+    padding: 20px;
+}
+
+/* Cara Pesan */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    flex-flow: column;
+    flex: 0 1 30%;
+    
+}
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    /* max-width: 800px; */
+    /* min-height: 500px; */
+    margin-inline: auto;
+}
+
+.item > button {
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+}

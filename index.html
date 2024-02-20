@@ -7,29 +7,36 @@
 
         <!-- My Own Styles -->
         <link rel="stylesheet" href="assets/styles/style.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <!-- Navbar -->
-            <h3>Yuk Mari Ngopi!</h3> 
-            <!-- I will change this to a logo image. -->
             <nav>
+                <h2 class="logo">Yuk Mari Ngopi!</h2> 
+                <!-- I will change this to a logo image. -->
                 <ul>
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="#menu">Menu</a></li>
+                    <li><a href="#cara-pesan">Cara Pesan</a></li>
                     <li><a href="#lokasi">Lokasi</a></li>
-                    <li><a href="#tentangKami">Tentang Kami</a></li>
+                    <li><a href="#tentang-kami">Tentang Kami</a></li>
                 </ul>
             </nav>
-
+            
             <!-- Jumbotron -->
             <div class="jumbotron">
                 <h1>Yuk Mari Ngopi!</h1>
                 <p>
                     Secangkir kopi siap menemani harimu. Mau rame, mau sendiri, tidak ada yang bisa menghalangi asiknya minum kopi. Atau mau coba yang lain? Klik daftar menu.
                 </p>
-
                 <button>Daftar Menu</button>
+                <div class="text">
+                </div>
             </div>
         </header>
 
@@ -48,45 +55,42 @@
                         <!-- Position on the Right -->
                         <table>
                             <caption>Minuman</caption>
-                            <tr>
+                            <!-- <tr>
                                 <th></th>
                                 <th>Panas</th>
                                 <th>Dingin</th>
-                            </tr>
+                            </tr> -->
                             <tr>
-                                <td>Kopi Hitam</td>
+                                <td>Kopi Hitam <sup>(Panas/Dingin)</sup></td>
                                 <td>14 ribu</td>
-                                <td>15 ribu</td>
                             </tr>
                             <tr>
-                                <td>Kopi Susu</td>
-                                <td>15 ribu</td>
+                                <td>Kopi Susu <sup>(Panas/Dingin)</sup></td>
                                 <td>16 ribu</td>
                             </tr>
                             <tr>
-                                <td>Kopi Coklat Susu</td>
-                                <td>20 ribu</td>
+                                <td>Kopi Coklat Susu <sup>(Panas/Dingin)</sup></td>
                                 <td>22 ribu</td>
                             </tr>
                             <tr>
-                                <td>Teh Tawar</td>
+                                <td>Teh Tawar <sup>(Panas/Dingin)</sup></td>
                                 <td>5 ribu</td>
+                            </tr>
+                            <tr>
+                                <td>Teh Manis <sup>(Panas/Dingin)</sup></td>
                                 <td>6 ribu</td>
                             </tr>
                             <tr>
-                                <td>Teh Manis</td>
-                                <td>6 ribu</td>
-                                <td>7 ribu</td>
-                            </tr>
-                            <tr>
-                                <td>Susu Putih</td>
-                                <td>15 ribu</td>
+                                <td>Susu Putih <sup>(Panas/Dingin)</sup></td>
                                 <td>15 ribu</td>
                             </tr>
                             <tr>
-                                <td>Susu Coklat</td>
+                                <td>Susu Coklat <sup>(Panas/Dingin)</sup></td>
                                 <td>17 ribu</td>
-                                <td>18 ribu</td>
+                            </tr>
+                            <tr>
+                                <td>Air Mineral <sup>(Le Minerale)</sup></td>
+                                <td>6 ribu</td>
                             </tr>
                         </table>
                     </section>
@@ -133,6 +137,29 @@
                     </section>
                 </article>
 
+                <article id="cara-pesan">
+                    <h2>Cara Pesan</h2>
+
+                    <div class="container">
+                        <section class="card item">
+                            <h3>Datang Langsung ke Cabang Kami</h3>
+                            <p>Sudah siap ngopi tapi belum tahu lokasi "Yuk Mari Ngopi!" dekat kalian? Klik tombol ini.</p>
+                            <button>Cek Lokasi</button>
+                        </section>
+
+                        <section class="card item">
+                            <h3>Pesan Melalui Aplikasi Pengiriman Makanan</h3>
+                            <p>Belum bisa mampir? Oh nggak masalah. Cari aja "Yuk Mari Ngopi!" di aplikasi Gofood atau Grabfood.</p>
+                        </section>
+
+                        <section class="card item">
+                            <h3>Pesan Melalui WhatsApp</h3>
+                            <p>Mau pesan atau reservasi atau cuma tanya-tanya? Lewat WhatsApp aja. Klik tombol di bawah ini. Kami siap membantu.</p>
+                            <button>WhatsApp</button>
+                        </section>
+                    </div>
+                </article>
+
                 <!-- Location -->
                 <article id="lokasi">
                     <h2>Lokasi</h2>
@@ -172,8 +199,10 @@
 
             <!-- About Us -->
             <aside>
-                <article class="profile card" id="tentangKami">
+                <!-- Saya belum menentukan konten apa yang cocok untuk aside -->
+                <article class="profile card" id="tentang-kami">
                     <img src="" alt="">
+                    <h2>Hehe</h2>
                 </article>
             </aside>
         </main>
