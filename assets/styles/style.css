@@ -132,6 +132,22 @@ article {
     scroll-margin-top: 7rem;
 }
 
+/* Menu Minuman Makanan */
+#menu section .food-drink {
+    /* background-color: #1B1A17; */
+    display: flex;
+    gap: 2rem;
+    flex-flow: row wrap;
+}
+
+#menu section img {
+    width: 30%;
+    max-height: 60vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
 /* Cara Pesan */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -143,18 +159,16 @@ article {
 .item {
     display: flex;
     flex-flow: column;
-    flex: 0 1 30%;
-    
+    flex: 0 1 31%;
 }
 
 .container {
     display: flex;
     /* flex-wrap: wrap; */
     flex-flow: row wrap;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: space-between;
-    /* max-width: 800px; */
-    /* min-height: 500px; */
+    min-height: 40vh;
     margin-inline: auto;
 }
 
