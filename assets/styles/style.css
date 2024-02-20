@@ -26,15 +26,14 @@ nav {
 
     background-color: #1B1A17;
     color: #F0E3CA;
-    padding: 0.6rem 2rem;
-
+    padding: 0.6rem;
+    padding-inline: 4rem;
     position: sticky;
-    top: 0;
+    /* top: 0; */
     /* width: 100%; */
 }
 
 nav ul {
-    padding-inline: 4rem;
     display: flex;
     gap: 2rem;
 }
