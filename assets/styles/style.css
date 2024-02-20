@@ -69,7 +69,7 @@ h2.logo {
 /* Jumbotron */
 .jumbotron {
     font-size: 20px;
-    padding: 7rem;
+    padding: 8rem;
     height: 100vh;
     background-image: linear-gradient(rgba(27, 26, 23, 0.75), rgba(27, 26, 23, 0.75)), url("../images/biji-kopi.jpg");
     background-color: #1B1A17;
