@@ -18,7 +18,11 @@ h1, h2 {
     font-family: "Caveat Brush", Verdana, Tahoma, sans-serif;
 }
 
-/* Header */
+header {
+    display: inline;
+}
+
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -62,6 +66,7 @@ h2.logo {
     color: #ff8303;
 }
 
+/* Jumbotron */
 .jumbotron {
     font-size: 20px;
     padding: 7rem;
@@ -81,10 +86,6 @@ h2.logo {
 .jumbotron p {
     padding: 0 13em;
     color: #F0E3CA;
-}
-
-header {
-    display: inline;
 }
 
 /* Main */
