@@ -90,11 +90,11 @@ h2.logo {
 
 .jumbotron button {
     padding: 0.8rem 2.5rem;
-    border: 3px solid #FF8303;
+    border: 3px solid transparent;
     border-radius: 999px;
     margin-block-start: 1rem;
 
-    background-color: transparent;
+    background-color: #FF8303;
 
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
@@ -108,7 +108,7 @@ h2.logo {
 
 .jumbotron button:hover {
     border: 3px solid transparent;
-    background-color: #FF8303;
+    background-color: #A35709;
 }
 
 .jumbotron button:active {
