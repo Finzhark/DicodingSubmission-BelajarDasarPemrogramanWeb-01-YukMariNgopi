@@ -88,6 +88,38 @@ h2.logo {
     color: #F0E3CA;
 }
 
+.jumbotron button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid #FF8303;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+
+    background-color: transparent;
+
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.jumbotron button:hover {
+    border: 3px solid transparent;
+    background-color: #FF8303;
+}
+
+.jumbotron button:active {
+    transform: scale(.95);
+}
+
+.jumbotron button a {
+    text-decoration: none;
+    color: #F0E3CA;
+}
+
 /* Main */
 article h2 {
     text-align: center;
