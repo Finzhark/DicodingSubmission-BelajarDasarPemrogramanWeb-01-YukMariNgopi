@@ -96,11 +96,8 @@ article h2 {
     text-align: center;
 }
 
-main, aside {
+article, aside {
     padding: 20px;
-}
-
-article {
     scroll-margin-top: 7rem;
 }
 
