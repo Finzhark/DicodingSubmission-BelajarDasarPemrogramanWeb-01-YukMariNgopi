@@ -151,6 +151,19 @@ article {
     object-position: center;
 }
 
+.nested-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu section .nested-flex img, #menu section .nested-flex table {
+    flex: 1;
+    width: 50%;
+}
+
+#menu section h3 {
+    text-align: center;
+}
 
 /* Cara Pesan */
 .card {
