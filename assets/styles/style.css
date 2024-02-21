@@ -109,7 +109,8 @@ h2.logo {
     transition: all 0.15s ease-in;
 }
 
-.jumbotron button:hover {
+/* start button in jumbotron */
+/* .jumbotron button:hover {
     border: 3px solid transparent;
     background-color: #A35709;
 }
@@ -121,7 +122,8 @@ h2.logo {
 .jumbotron button a {
     text-decoration: none;
     color: #F0E3CA;
-}
+} */
+/* end */
 
 /* Main */
 article h2 {
@@ -207,5 +209,20 @@ article {
 .item > button {
     margin-top: auto;
     padding: 0.5rem 1rem;
+}
+
+/* General */
+button:hover {
+    border: 3px solid transparent;
+    background-color: #A35709;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+button a {
+    text-decoration: none;
+    color: #F0E3CA;
 }
 
