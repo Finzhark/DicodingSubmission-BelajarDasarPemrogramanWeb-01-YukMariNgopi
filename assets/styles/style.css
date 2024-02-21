@@ -91,7 +91,8 @@ h2.logo {
     color: #F0E3CA;
 }
 
-.jumbotron button {
+/* start button in jumbotron */
+/* .jumbotron button {
     padding: 0.8rem 2.5rem;
     border: 3px solid transparent;
     border-radius: 999px;
@@ -107,9 +108,8 @@ h2.logo {
 
     cursor: pointer;
     transition: all 0.15s ease-in;
-}
+} */
 
-/* start button in jumbotron */
 /* .jumbotron button:hover {
     border: 3px solid transparent;
     background-color: #A35709;
@@ -212,6 +212,24 @@ article {
 }
 
 /* General */
+button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+
+    background-color: #FF8303;
+
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
 button:hover {
     border: 3px solid transparent;
     background-color: #A35709;
