@@ -74,7 +74,8 @@ h2.logo {
     font-size: 20px;
     padding: 8rem;
     height: 100vh;
-    background-image: linear-gradient(rgba(27, 26, 23, 0.75), rgba(27, 26, 23, 0.75)), url("../images/biji-kopi.jpg");
+
+    background-image: linear-gradient(180deg, rgba(27, 26, 23, 1), rgba(27, 26, 23, 0.8), rgba(27, 26, 23, 0.7)),url("../images/biji-kopi.jpg");
     background-color: #1B1A17;
     /* opacity: .5; */
     text-align: center;
