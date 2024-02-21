@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", Tahoma, sans-serif;
     background-color: #F0E3CA;
