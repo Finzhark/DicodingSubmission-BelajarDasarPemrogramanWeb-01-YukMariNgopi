@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: "Quicksand", Tahoma, sans-serif;
+    font-family: "Roboto", Tahoma, sans-serif;
     background-color: #F0E3CA;
     margin: 0;
     padding: 0;
@@ -90,40 +90,6 @@ h2.logo {
     padding: 0 13em;
     color: #F0E3CA;
 }
-
-/* start button in jumbotron */
-/* .jumbotron button {
-    padding: 0.8rem 2.5rem;
-    border: 3px solid transparent;
-    border-radius: 999px;
-    margin-block-start: 1rem;
-
-    background-color: #FF8303;
-
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 700;
-    color: white;
-
-    cursor: pointer;
-    transition: all 0.15s ease-in;
-} */
-
-/* .jumbotron button:hover {
-    border: 3px solid transparent;
-    background-color: #A35709;
-}
-
-.jumbotron button:active {
-    transform: scale(.95);
-}
-
-.jumbotron button a {
-    text-decoration: none;
-    color: #F0E3CA;
-} */
-/* end */
 
 /* Main */
 article h2 {
@@ -220,7 +186,7 @@ button {
 
     background-color: #FF8303;
 
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
