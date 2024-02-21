@@ -165,6 +165,14 @@ article {
     text-align: center;
 }
 
+.food-drink {
+    flex: 1 1 auto;
+    flex-basis: 20%;
+    /* flex-basis: calc(10% - 0.5rem); */
+    /* max-width: calc(10% - 0.5rem); */
+    /* max-width: 50%; */
+}
+
 /* Cara Pesan */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
