@@ -101,36 +101,34 @@ article, aside {
 }
 
 /* Menu Minuman Makanan */
-#menu section h3{
+#menu section h3, #menu th {
     text-align: center;
 }
 
-.food-drink {
+section.food-drink {
     gap: 2rem;
     /* flex-flow: row wrap; */
     flex: 1 1 20%;
 }
 
-#menu section img {
+img.food-drink-image {
     width: 30%;
     max-height: 60vh;
     object-fit: cover;
     object-position: center;
 }
 
-.nested-flex {
+.menu-item {
     display: flex;
     justify-content: space-between;
 }
 
 /* Gambar di menu makan */
-#menu section .nested-flex img, #menu section .nested-flex table{
+img.food-drink-image, #menu section .menu-item table{
     flex: 1;
-    max-width: 50%;
-    object-fit: cover;
-    object-position: center;
     padding: .5rem;
-    background-color: #A35709; /* sementara diwarnai */
+    /* background-color: #A35709;  */
+    /* sementara diwarnai */
 }
 
 /* Lokasi */
@@ -202,7 +200,6 @@ button a {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-
     padding: 20px;
 }
 
@@ -236,10 +233,22 @@ button a {
     }
 
     #menu section img {
-        width: 10%;
+        width: 80%;
         max-height: 20vh;
-        object-fit: cover;
+        aspect-ratio: 1/1;
+        border: 3px solid #1B1A17;
+        background-color: aqua;
+        object-fit: contain;
         object-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-flow: column;
+        flex: 0 1 31%;
+        min-height: 45vh;
     }
 }
 
@@ -268,8 +277,4 @@ button a {
 
 #lokasi ul > li > ul > li {
     padding: 10px;
-}
-
-#menu th {
-    text-align: center;
 }
