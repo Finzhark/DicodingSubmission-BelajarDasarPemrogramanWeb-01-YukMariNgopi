@@ -282,4 +282,37 @@ button a {
         min-height: 40vh;
         margin-inline: auto;
     }
+
+    .navbar-hamburger .stripe {
+        width: 47px;
+        height: 7px;
+        background-color: #FF8303;
+        margin: 7px 0;
+        border-radius: 999px;
+        transition: .4s ease-in;
+    }
+
+    nav ul {
+        display: flex;
+        flex-flow: column nowrap;
+        position: absolute;
+        background-color: #FF8303;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        /* transform: translateY(-100%); */
+        z-index: -1;
+        transition: .6s ease;
+    }
+
+    nav ul>li {
+        padding-left: 35px;
+        padding-bottom: 10px;
+    }
+
+    nav
+    /* nav ul {
+        visibility: hidden;
+    } */
+    
 }
