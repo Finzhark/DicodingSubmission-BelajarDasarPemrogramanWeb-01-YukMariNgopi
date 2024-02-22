@@ -105,6 +105,10 @@ article, aside {
     text-align: center;
 }
 
+td:nth-child(2) {
+    text-align: right;
+}
+
 section.food-drink {
     gap: 2rem;
     /* flex-flow: row wrap; */
@@ -236,8 +240,8 @@ button a {
         width: 80%;
         max-height: 20vh;
         aspect-ratio: 1/1;
-        border: 3px solid #1B1A17;
-        background-color: aqua;
+        /* border: 3px solid #1B1A17; */
+        /* background-color: aqua; */
         object-fit: contain;
         object-position: center;
         margin-left: auto;
@@ -249,6 +253,11 @@ button a {
         flex-flow: column;
         flex: 0 1 31%;
         min-height: 45vh;
+    }
+
+    table {
+        margin: 20px 10px;
+        /* border: 2px solid #1B1A17; */
     }
 }
 
@@ -269,6 +278,14 @@ button a {
         margin-inline: auto;
     }
 
+    img.food-drink-image {
+        background-color: aliceblue;
+    }
+
+    table {
+        margin: 20px 10px;
+        /* border: 2px solid #1B1A17; */
+    }
 }
 
 #lokasi ul {
