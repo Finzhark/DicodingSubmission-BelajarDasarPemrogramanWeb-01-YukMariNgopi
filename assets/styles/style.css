@@ -209,10 +209,12 @@ button a {
 }
 
 /* Lokasi */
-.landmark {
-    background-color: #1B1A17;
-    width: 50%;
-    height: 10vh;
+#lokasi img.landmark-image {
+    width: 60%;
+    min-height: 30vh;
+    /* aspect-ratio: 1/1; */
+    object-fit: cover;
+    object-position: center;
     margin-left: auto;
     margin-right: auto;
 }
