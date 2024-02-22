@@ -213,13 +213,13 @@ button a {
     background-color: #1B1A17;
     width: 50%;
     height: 10vh;
-    margin: auto;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #lokasi .container section {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     flex: 0 1 31%;
 }
 
@@ -227,10 +227,11 @@ button a {
     text-align: center;
 }
 
-#lokasi section ul > li > ul > li{
-    list-style-type: lower-alpha;
-}
-
-#lokasi section ul > li{
+#lokasi section ul {
     list-style-type: none;
 }
+
+/* #lokasi section ul > li > ul > li span{
+    padding: 5px;
+    font-weight: bold;
+} */
