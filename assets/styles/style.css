@@ -72,6 +72,7 @@ h2.logo {
 .jumbotron {
     font-size: 20px;
     padding: 8rem;
+    /* width: 100%; */
     height: 100vh;
 
     background-image: linear-gradient(180deg, rgba(27, 26, 23, 1), rgba(27, 26, 23, 0.8), rgba(27, 26, 23, 0.7)),url("../images/biji-kopi.jpg");
@@ -80,7 +81,7 @@ h2.logo {
 }
 
 .jumbotron h1 {
-    font-size: 4em;
+    font-size: 4rem;
     color: #ff8303;
 }
 
@@ -100,11 +101,14 @@ article, aside {
 }
 
 /* Menu Minuman Makanan */
-#menu section .food-drink {
-    /* background-color: #1B1A17; */
-    display: flex;
+#menu section h3{
+    text-align: center;
+}
+
+.food-drink {
     gap: 2rem;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+    flex: 1 1 20%;
 }
 
 #menu section img {
@@ -119,60 +123,36 @@ article, aside {
     justify-content: space-between;
 }
 
+/* Gambar di menu makan */
 #menu section .nested-flex img, #menu section .nested-flex table{
     flex: 1;
     max-width: 50%;
     object-fit: cover;
     object-position: center;
     padding: .5rem;
+    background-color: #A35709; /* sementara diwarnai */
 }
 
-/* #menu section.nested-flex table {
-    display: flex;
-    flex-flow: column wrap;
-} */
-#menu section h3 {
+/* Lokasi */
+img.landmark-image {
+    width: 60%;
+    height: 30vh;
+    /* aspect-ratio: 1/1; */
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lokasi section h3{
     text-align: center;
 }
 
-.food-drink {
-    flex: 1 1 20%;
-    /* flex-basis: 20%; */
-    /* flex-basis: calc(10% - 0.5rem); */
-    /* max-width: calc(10% - 0.5rem); */
-    /* max-width: 50%; */
+#lokasi section ul {
+    list-style-type: none;
 }
 
-/* Cara Pesan */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-
-    padding: 20px;
-}
-
-.item {
-    display: flex;
-    flex-flow: column;
-    flex: 0 1 31%;
-}
-
-.container {
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-flow: row wrap;
-    gap: 2rem;
-    justify-content: space-between;
-    min-height: 40vh;
-    margin-inline: auto;
-}
-
-.item > button {
-    margin-top: auto;
-    padding: 0.5rem 1rem;
-}
-
-/* General */
+/* General Button */
 button {
     padding: 0.8rem 2.5rem;
     border: 3px solid transparent;
@@ -180,8 +160,6 @@ button {
     margin-block-start: 1rem;
 
     background-color: #FF8303;
-
-    /* font-family: 'Quicksand', sans-serif; */
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
@@ -205,45 +183,48 @@ button a {
     color: #F0E3CA;
 }
 
-/* Lokasi */
-#lokasi img.landmark-image {
-    width: 60%;
-    height: 30vh;
-    /* aspect-ratio: 1/1; */
-    object-fit: cover;
-    object-position: center;
-    margin-left: auto;
-    margin-right: auto;
+.item > button {
+    margin-top: auto;
+    padding: 0.5rem 1rem;
 }
 
-#lokasi .container section {
+/* Box Card Container */
+/* Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi */
+.container {
     display: flex;
-    flex-flow: column wrap;
+    /* flex-flow: row wrap; */
+    gap: 2rem;
+    justify-content: space-between;
+    /* min-height: 40vh; */
+    /* margin-inline: auto; */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    flex-flow: column;
     flex: 0 1 31%;
+    min-height: 45vh;
 }
-
-#lokasi section h3{
-    text-align: center;
-}
-
-#lokasi section ul {
-    list-style-type: none;
-}
-
-/* #lokasi section ul > li > ul > li span{
-    padding: 5px;
-    font-weight: bold;
-} */
-
 
 /* Perangkat dengan layar lebar 1200px dan di bawahnya */
 @media screen and (max-width: 1200px) {
+    .jumbotron p {
+        padding: 0;
+        color: #F0E3CA;
+    }
+
     #lokasi .container {
         display: flex;
-        /* flex-wrap: wrap; */
         flex-flow: row wrap;
-        gap: 2rem;
-        justify-content: center;
+        /* gap: 2rem; */
+        justify-content: space-evenly;
         min-height: 40vh;
         margin-inline: auto;
     }
@@ -251,7 +232,14 @@ button a {
     #lokasi .container section {
         display: flex;
         flex-flow: column wrap;
-        flex: 0 1 40%;
+        flex: 1 1 40%;
+    }
+
+    #menu section img {
+        width: 10%;
+        max-height: 20vh;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
@@ -272,4 +260,16 @@ button a {
         margin-inline: auto;
     }
 
+}
+
+#lokasi ul {
+    padding: 0;
+}
+
+#lokasi ul > li > ul > li {
+    padding: 10px;
+}
+
+#menu th {
+    text-align: center;
 }
