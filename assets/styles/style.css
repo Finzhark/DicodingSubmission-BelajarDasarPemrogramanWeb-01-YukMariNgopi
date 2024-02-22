@@ -208,3 +208,29 @@ button a {
     color: #F0E3CA;
 }
 
+/* Lokasi */
+.landmark {
+    background-color: #1B1A17;
+    width: 50%;
+    height: 10vh;
+    margin: auto;
+
+}
+
+#lokasi .container section {
+    display: flex;
+    flex-flow: column;
+    flex: 0 1 31%;
+}
+
+#lokasi section h3{
+    text-align: center;
+}
+
+#lokasi section ul > li > ul > li{
+    list-style-type: lower-alpha;
+}
+
+#lokasi section ul > li{
+    list-style-type: none;
+}
