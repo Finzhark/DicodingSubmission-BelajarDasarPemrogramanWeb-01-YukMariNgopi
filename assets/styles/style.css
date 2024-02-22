@@ -46,7 +46,7 @@ nav ul {
     gap: 2rem;
 }
 
-nav li {
+nav ul li {
     list-style-type: none;
 }
 
@@ -260,14 +260,6 @@ button a {
 
 /* Perangkat dengan layar lebar 768 dan di bawahnya */
 @media screen and (max-width: 768px) {
-    /* nav ul {
-        justify-content: center;
-    }
-
-    main aside {
-        align-self: stretch;
-    } */
-
     .jumbotron p {
         padding: 0;
         color: #F0E3CA;
@@ -283,7 +275,8 @@ button a {
         margin-inline: auto;
     }
 
-    .navbar-hamburger .stripe {
+    /* Navbar Hamburger*/
+    .stripe {
         width: 47px;
         height: 7px;
         background-color: #FF8303;
@@ -294,24 +287,38 @@ button a {
 
     nav ul {
         display: flex;
-        flex-flow: column nowrap;
+        flex-direction: column;
+        flex-wrap: nowrap;
         position: absolute;
-        background-color: #FF8303;
+        background-color: #1B1A17;
         width: 100%;
-        top: 70px;
+        top: 75px;
         left: 0;
-        /* transform: translateY(-100%); */
+        transform: translateY(-100%);
         z-index: -1;
-        transition: .6s ease;
+        transition: .6s;
     }
 
-    nav ul>li {
-        padding-left: 35px;
-        padding-bottom: 10px;
+    nav ul li {
+        padding-left: 25px;
     }
+}
 
-    /* nav ul {
-        visibility: hidden;
-    } */
-    
+nav .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ nav .nav-list {
+    transform: translateY(0);
+}
+
+input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
 }
