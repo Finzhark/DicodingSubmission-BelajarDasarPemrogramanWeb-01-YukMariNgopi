@@ -211,7 +211,7 @@ button a {
 /* Lokasi */
 #lokasi img.landmark-image {
     width: 60%;
-    min-height: 30vh;
+    height: 30vh;
     /* aspect-ratio: 1/1; */
     object-fit: cover;
     object-position: center;
