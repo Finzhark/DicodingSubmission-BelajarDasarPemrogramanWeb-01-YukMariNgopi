@@ -281,6 +281,16 @@ button a {
 
 /* Perangkat dengan layar lebar 768 dan di bawahnya */
 @media screen and (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 3rem;
+        color: #ff8303;
+        text-align: center;
+    }
+
+    .jumbotron {
+        padding: 8rem 0;
+    }
+
     #lokasi .container, .container {
         display: flex;
         /* flex-wrap: wrap; */
