@@ -350,7 +350,7 @@ button a {
 
     input:checked ~ ul {
         transform: translateY(0);
-        transition: .4s ease-in;
+        transition: .4s ease-in-out;
     }
 
     .navbar-icon .stripe {
@@ -359,7 +359,7 @@ button a {
         background-color: #FF8303;
         margin: 5px 0;
         border-radius: 999px;
-        transition: .35s ease-in;
+        transition: 0.4s ease-in-out;
     }
 
     .navbar-background {
@@ -375,12 +375,15 @@ button a {
 
     input:checked ~ .navbar-icon .stripe:nth-child(1) {
         position: absolute;
-        transform: rotate(45deg);
+        transform: rotate(-135deg);
         background-color: #FF8303;
     }
     
     input:checked ~ .navbar-icon .stripe:nth-child(2) {
-        display: none;
+        /* display: none; */
+        width: 0;
+        height: 0;
+        background-color: transparent;
     }
     
     input:checked ~ .navbar-icon .stripe:nth-child(3) {
