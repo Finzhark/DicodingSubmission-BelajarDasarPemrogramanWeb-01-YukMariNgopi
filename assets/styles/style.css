@@ -40,11 +40,7 @@ nav {
     top: 0;
 
     box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
-    /* border-radius: 0 0 99px 99px; */
-    
-    /* Tambahan */
-    /* width: 100%;
-    z-index: 3; */
+    z-index: 50;
 }
 
 nav ul {
