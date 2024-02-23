@@ -322,7 +322,7 @@ button a {
         flex-flow: column nowrap;
         position: absolute;
         gap: 2rem;
-        background-color: #1B1A17;
+        background-color: rgba(27, 26, 23, 0.9);
         transform: translateY(-150%);
         width: 100%;
         top: 65px;
@@ -337,7 +337,7 @@ button a {
 
     nav ul>li {
         margin-top: 10px;
-        /* padding-left: 40px; */
+        padding-left: 0;
         transition: .45s ease-in;
         text-align: center;
     }
