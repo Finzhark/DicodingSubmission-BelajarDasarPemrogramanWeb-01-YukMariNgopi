@@ -80,6 +80,7 @@ nav a:active {
 
 h2.logo {
     color: #FF8303;
+    /* font-size: 2rem; */
 }
 
 /* Jumbotron */
@@ -288,7 +289,7 @@ button a {
     }
 
     .jumbotron {
-        padding: 3.5rem 2rem 7rem 2rem; /* top right bottom left */
+        padding: 2.5rem 2rem 10rem 2rem; /* top right bottom left */
     }
 
     #lokasi .container, .container {
@@ -357,8 +358,8 @@ button a {
     }
 
     .navbar-icon .stripe {
-        width: 45px;
-        height: 7px;
+        width: 43px;
+        height: 5px;
         background-color: #FF8303;
         margin: 7px 0;
         border-radius: 999px;
