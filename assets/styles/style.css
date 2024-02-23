@@ -92,16 +92,20 @@ h2.logo {
     background-image: linear-gradient(180deg, rgba(27, 26, 23, 1), rgba(27, 26, 23, 0.8), rgba(27, 26, 23, 0.7)),url("../images/biji-kopi.jpg");
     background-color: #1B1A17;
     text-align: center;
+
+    box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
 }
 
 .jumbotron h1 {
     font-size: 4rem;
     color: #ff8303;
+    text-align: center;
 }
 
 .jumbotron p {
     padding: 0 13em;
     color: #F0E3CA;
+    text-align: center;
 }
 
 /* Main */
@@ -277,11 +281,6 @@ button a {
 
 /* Perangkat dengan layar lebar 768 dan di bawahnya */
 @media screen and (max-width: 768px) {
-    .jumbotron p {
-        padding: 0;
-        color: #F0E3CA;
-    }
-
     #lokasi .container, .container {
         display: flex;
         /* flex-wrap: wrap; */
