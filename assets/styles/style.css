@@ -316,10 +316,6 @@ button a {
     nav {
         display: flex;
         justify-content: space-between;
-        /* background-color: green; */
-        /* padding: 0 15%; */
-        z-index: 5;
-        /* flex: 0 1 50%; */
     }
     nav ul {
         display: flex;
@@ -341,16 +337,14 @@ button a {
 
     nav ul>li {
         margin-top: 10px;
-        padding-left: 45px;
-        transition: .4s ease-in;
-
-        /* background-color: blue; */
+        /* padding-left: 40px; */
+        transition: .45s ease-in;
+        text-align: center;
     }
 
     nav a:hover {
         font-weight: bold;
         color: #FF8303;
-        /* background-color: aqua; */
     }
 
     input:checked ~ ul {
@@ -364,13 +358,14 @@ button a {
         background-color: #FF8303;
         margin: 7px 0;
         border-radius: 999px;
-        /* transition: .4s ease-in; */
+        transition: .35s ease-in;
     }
+
     .navbar-background {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -3;
+        /* z-index: -3; */
         background-color: #1B1A17;
         height: 100%;
         width: 100%;
@@ -385,10 +380,6 @@ button a {
     
     input:checked ~ .navbar-icon .stripe:nth-child(2) {
         display: none;
-        /* visibility: hidden; */
-        transition: .4 ease-in-out;
-        /* background-color: transparent; */
-        transform: rotate(90deg);
     }
     
     input:checked ~ .navbar-icon .stripe:nth-child(3) {
@@ -406,7 +397,6 @@ button a {
 }
 
 input.navbar-button {
-    /* visibility: hidden; */
     display: none;
 }
 
