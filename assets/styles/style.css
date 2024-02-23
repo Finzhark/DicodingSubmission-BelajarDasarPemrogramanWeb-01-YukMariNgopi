@@ -217,7 +217,7 @@ img.about-us-image {
     flex-direction: column;
     position: relative;
     left: -5vw;
-    background-color: rgba(27, 26, 23, 0.6);
+    background-color: rgba(27, 26, 23, 1);
     padding: 20px;
     color: #F0E3CA;
     border-radius: 15px;
@@ -443,6 +443,45 @@ button a {
     input:checked ~ .navbar-icon .stripe:nth-child(3) {
         transform: rotate(-45deg);
         background-color: #FF8303;
+    }
+
+    /* Tentang Kami */
+    /* sementara dipisah dulu */
+    img.about-us-image {
+        width: 100%;
+        position: relative;
+        left: -10vw;
+        /* height: 50vh; */
+        /* aspect-ratio: 1/1; */
+        object-fit: cover;
+        object-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+    }
+
+    #tentang-kami div {
+        display: flex;
+        flex-flow: column nowrap;
+        /* justify-content: center; */
+        align-items: center;
+        padding: 0 10vw;
+    }
+
+
+    #tentang-kami div div {
+        display: flex;
+        position: relative;
+        left: 10vw;
+        top: -10vh;
+        background-color: rgba(27, 26, 23, 1);
+        padding: 20px;
+        color: #F0E3CA;
+        border-radius: 15px;
+        min-width: 50%;
+        min-height: 30vh;
+        text-align: center;
     }
 }
 
