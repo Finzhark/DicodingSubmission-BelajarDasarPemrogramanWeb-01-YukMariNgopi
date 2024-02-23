@@ -38,11 +38,24 @@ nav {
     padding-inline: 4rem;
     position: sticky;
     top: 0;
+
+    box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
+    /* border-radius: 0 0 99px 99px; */
+    
+    /* Tambahan */
+    /* width: 100%;
+    z-index: 3; */
 }
 
 nav ul {
     display: flex;
     gap: 2rem;
+
+    /* tambahan */
+    /* margin: 0;
+    padding: 0; */
+    /* sementara aja */
+    /* overflow-x: scroll;  */
 }
 
 nav ul li {
@@ -53,6 +66,7 @@ nav a {
     font-size: 18px;
     text-decoration: none;
     color: #F0E3CA;
+    /* border: 5px solid blue; */
 }
 
 nav a:hover {
@@ -286,6 +300,90 @@ button a {
         margin: 20px 10px;
         /* border: 2px solid #1B1A17; */
     }
+
+    /* Navbar Hamburger 3 Strip */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: green; */
+        /* padding: 0 15%; */
+        z-index: 5;
+        /* flex: 0 1 50%; */
+    }
+    nav ul {
+        display: flex;
+        flex-flow: column nowrap;
+        position: absolute;
+        gap: 2rem;
+        background-color: #1B1A17;
+        transform: translateY(-150%);
+        width: 100%;
+        top: 65px;
+        left: 0;
+        z-index: -5;
+
+        padding-bottom: 15px;
+        transition: .6s ease;
+
+        box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
+    }
+
+    nav ul>li {
+        margin-top: 10px;
+        padding-left: 45px;
+        transition: .4s ease-in;
+
+        /* background-color: blue; */
+    }
+
+    nav a:hover {
+        font-weight: bold;
+        color: #FF8303;
+        /* background-color: aqua; */
+    }
+
+    input:checked ~ .nav-list {
+        transform: translateY(0);
+        transition: .4s ease-in;
+    }
+
+    .navbar-icon .stripe {
+        width: 45px;
+        height: 7px;
+        background-color: #FF8303;
+        margin: 7px 0;
+        border-radius: 999px;
+        /* transition: .4s ease-in; */
+    }
+    .navbar-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -3;
+        background-color: #1B1A17;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
+    }
+
+    input:checked ~ .navbar-icon .stripe:nth-child(1) {
+        position: absolute;
+        transform: rotate(45deg);
+        background-color: #FF8303;
+    }
+    
+    input:checked ~ .navbar-icon .stripe:nth-child(2) {
+        display: none;
+        /* visibility: hidden; */
+        transition: .4 ease-in-out;
+        /* background-color: transparent; */
+        transform: rotate(90deg);
+    }
+    
+    input:checked ~ .navbar-icon .stripe:nth-child(3) {
+        transform: rotate(-45deg);
+        background-color: #FF8303;
+    }
 }
 
 #lokasi ul {
@@ -294,4 +392,19 @@ button a {
 
 #lokasi ul > li > ul > li {
     padding: 10px;
+}
+
+input.navbar-button {
+    /* visibility: hidden; */
+    display: none;
+}
+
+.navbar-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    background-color: #1B1A17;
+    height: 100%;
+    width: 100%;
 }
