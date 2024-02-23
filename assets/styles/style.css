@@ -290,7 +290,7 @@ button a {
 
     .jumbotron {
         padding: 0.7rem 2rem 10rem 2rem; /* top right bottom left */
-        height: 50vh;
+        height: 100%;
     }
 
     #lokasi .container, .container {
