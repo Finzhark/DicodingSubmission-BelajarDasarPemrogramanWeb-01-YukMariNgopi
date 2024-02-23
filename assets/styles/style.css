@@ -187,6 +187,7 @@ img.landmark-image {
 
 #lokasi td {
     text-align: left;
+    vertical-align: top;
 }
 
 /* Tentang Kami */
