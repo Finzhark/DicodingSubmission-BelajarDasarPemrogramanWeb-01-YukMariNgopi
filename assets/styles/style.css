@@ -189,6 +189,43 @@ img.landmark-image {
     list-style-type: none;
 }
 
+/* Tentang Kami */
+/* sementara dipisah dulu */
+img.about-us-image {
+    width: 60%;
+    height: 50vh;
+    /* aspect-ratio: 1/1; */
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+#tentang-kami div {
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 10vw;
+}
+
+
+#tentang-kami div div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -5vw;
+    background-color: rgba(27, 26, 23, 0.6);
+    padding: 20px;
+    color: #F0E3CA;
+    border-radius: 15px;
+    min-width: 50%;
+    min-height: 30vh;
+    text-align: center;
+}
+
 /* General Button */
 button {
     padding: 0.8rem 2.5rem;
