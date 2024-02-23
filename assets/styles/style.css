@@ -353,7 +353,7 @@ button a {
         /* background-color: aqua; */
     }
 
-    input:checked ~ .nav-list {
+    input:checked ~ ul {
         transform: translateY(0);
         transition: .4s ease-in;
     }
