@@ -154,8 +154,10 @@ img.food-drink-image, #menu section .menu-item table{
     /* sementara diwarnai */
 }
 
-/* Lokasi */
-img.landmark-image {
+/* Cara Pesan */
+
+
+img.how-to-order-image {
     width: 60%;
     height: 30vh;
     /* aspect-ratio: 1/1; */
@@ -167,7 +169,21 @@ img.landmark-image {
     border-radius: 15px;
 }
 
-#lokasi section h3{
+/* Lokasi */
+/* sementara dipisah dulu */
+img.landmark-image {
+    width: 60%;
+    height: 30vh;
+    /* aspect-ratio: 1/1; */
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px; 
+}
+
+#cara-pesan section h3, #lokasi section h3{
     text-align: center;
 }
 
