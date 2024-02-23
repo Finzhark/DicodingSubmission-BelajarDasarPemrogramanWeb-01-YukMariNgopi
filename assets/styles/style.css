@@ -504,3 +504,11 @@ input.navbar-button {
     height: 100%;
     width: 100%;
 }
+
+footer {
+    padding: 20px;
+    color: #FF8303;
+    background-color: #1B1A17;
+    text-align: center;
+    font-weight: bold;
+}
