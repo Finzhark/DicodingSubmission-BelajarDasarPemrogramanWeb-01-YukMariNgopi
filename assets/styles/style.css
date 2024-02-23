@@ -289,7 +289,7 @@ button a {
     }
 
     .jumbotron {
-        padding: 2.5rem 2rem 10rem 2rem; /* top right bottom left */
+        padding: 0.5rem 2rem 10rem 2rem; /* top right bottom left */
     }
 
     #lokasi .container, .container {
