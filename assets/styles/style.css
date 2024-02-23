@@ -88,7 +88,7 @@ h2.logo {
     font-size: 20px;
     padding: 8rem;
     /* width: 100%; */
-    height: 100%;
+    height: 100vh;
 
     background-image: linear-gradient(180deg, rgba(27, 26, 23, 1), rgba(27, 26, 23, 0.8), rgba(27, 26, 23, 0.7)),url("../images/biji-kopi.jpg");
     background-color: #1B1A17;
@@ -290,6 +290,7 @@ button a {
 
     .jumbotron {
         padding: 0.5rem 2rem 10rem 2rem; /* top right bottom left */
+        height: 50vh;
     }
 
     #lokasi .container, .container {
