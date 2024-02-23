@@ -322,9 +322,9 @@ button a {
         flex-flow: column nowrap;
         position: absolute;
         gap: 2rem;
-        background-color: rgba(27, 26, 23, 0.9);
+        background-color: #1B1A17;
         transform: translateY(-150%);
-        width: 100%;
+        width: 90%;
         top: 65px;
         left: 0;
         z-index: -5;
@@ -337,9 +337,9 @@ button a {
 
     nav ul>li {
         margin-top: 10px;
-        padding-left: 0;
+        /* padding-left: 0; */
         transition: .45s ease-in;
-        text-align: left;
+        text-align: center;
     }
 
     nav a:hover {
@@ -356,7 +356,7 @@ button a {
         width: 43px;
         height: 5px;
         background-color: #FF8303;
-        margin: 7px 0;
+        margin: 5px 0;
         border-radius: 999px;
         transition: .35s ease-in;
     }
@@ -366,7 +366,7 @@ button a {
         top: 0;
         left: 0;
         /* z-index: -3; */
-        background-color: #1B1A17;
+        /* background-color: #1B1A17; */
         height: 100%;
         width: 100%;
         box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
