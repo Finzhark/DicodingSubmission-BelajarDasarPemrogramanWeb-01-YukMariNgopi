@@ -90,7 +90,7 @@ h2.logo {
     /* width: 100%; */
     height: 100vh;
 
-    background-image: linear-gradient(180deg, rgba(27, 26, 23, 1), rgba(27, 26, 23, 0.8), rgba(27, 26, 23, 0.7)),url("../images/biji-kopi.jpg");
+    background-image: linear-gradient(180deg, rgba(27, 26, 23, 1), rgba(27, 26, 23, 0.8), rgba(240, 227, 202, 0.3), rgba(27, 26, 23, 0.6), rgba(27, 26, 23, 0.7)),url("../images/biji-kopi.jpg");
     background-color: #1B1A17;
     text-align: center;
 
@@ -325,20 +325,19 @@ button a {
         background-color: #1B1A17;
         transform: translateY(-150%);
         width: 100%;
-        padding-right: 10px;
         top: 65px;
         left: 0;
         z-index: -5;
-
-        padding-bottom: 15px;
-        transition: .6s ease;
+        padding-bottom: 35px;
+        transition: all .6s ease;
 
         box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
     }
 
     nav ul>li {
-        margin-top: 10px;
-        /* padding-left: 0; */
+        margin-top: 20px;
+        padding-right: 7vw;
+        /* padding-left: 5vw; */
         transition: .45s ease-in;
         text-align: center;
     }
