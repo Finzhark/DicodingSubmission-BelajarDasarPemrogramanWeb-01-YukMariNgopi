@@ -120,7 +120,7 @@ article, aside {
     text-align: center;
 }
 
-td:nth-child(2) {
+#menu section td:nth-child(2) {
     text-align: right;
 }
 
@@ -183,6 +183,10 @@ img.landmark-image {
 
 #lokasi section ul {
     list-style-type: none;
+}
+
+#lokasi td {
+    text-align: left;
 }
 
 /* Tentang Kami */
