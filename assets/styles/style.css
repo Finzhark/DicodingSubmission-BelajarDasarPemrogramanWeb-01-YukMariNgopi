@@ -184,7 +184,7 @@ button {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
-    color: white;
+    color: #F0E3CA;
 
     cursor: pointer;
     transition: all 0.15s ease-in;
@@ -304,7 +304,7 @@ button a {
     }
 
     img.food-drink-image {
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
     }
 
     table {
