@@ -367,7 +367,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         background-color: #FF8303;
         margin: 5px 0;
         border-radius: 999px;
-        transition: all 0.4s ease-in-out;
+        transition: all .4s ease-in-out;
     }
 
     .navbar-background {
@@ -380,23 +380,20 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     }
 
     input:checked ~ .navbar-icon .stripe {
-        transition: transform 0.4s ease-in-out;
+        transition: transform .4s ease-in-out;
     }
 
     input:checked ~ .navbar-icon .stripe:nth-child(1) {
-        position: absolute;
-        transform: rotate(-135deg);
+        transform: rotate(-135deg)translate(-8px, -9px);
         background-color: #FF8303;
     }
     
     input:checked ~ .navbar-icon .stripe:nth-child(2) {
-        height: 0;
-        transform: scale(0);
+        transform: scale(0)rotate(-60deg);
     }
     
     input:checked ~ .navbar-icon .stripe:nth-child(3) {
-        transform: rotate(-45deg);
-        background-color: #FF8303;
+        transform: rotate(-45deg)translate(4.5px, -7px);
     }
 
     /* Tentang Kami */
