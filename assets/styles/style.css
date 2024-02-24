@@ -39,16 +39,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: #1B1A17;
     color: #F0E3CA;
-    padding: 0.6rem;
+    padding: 0.35rem;
     padding-inline: 4rem;
     position: sticky;
     top: 0;
-
     box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
-    /* z-index: 50; */
 }
 
 nav ul {
@@ -75,8 +72,9 @@ nav a:active {
     font-weight: 400;
 }
 
-h2.logo {
+h2.logo-header {
     color: #FF8303;
+
 }
 
 input.navbar-button {
@@ -120,21 +118,23 @@ input.navbar-button {
     text-align: center;
 }
 
-/* Main */
-article h2 {
+/* Text Align Center untuk h3 dan h2 dan th */
+/* Cek lagi */
+article h2,
+#menu section h3, 
+#menu th,
+#cara-pesan section h3, 
+#lokasi section h3 {
     text-align: center;
 }
 
+/* Padding untuk Menu */
 article, aside {
-    padding: 20px;
+    padding: 30px;
     scroll-margin-top: 5rem;
 }
 
 /* Menu Minuman Makanan */
-#menu section h3, #menu th {
-    text-align: center;
-}
-
 #menu section td:nth-child(2) {
     text-align: right;
 }
@@ -176,10 +176,6 @@ img.how-to-order-image, img.landmark-image {
 }
 
 /* Lokasi */
-#cara-pesan section h3, #lokasi section h3{
-    text-align: center;
-}
-
 #lokasi td {
     text-align: left;
     vertical-align: top;
@@ -357,18 +353,18 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         justify-content: space-between;
     }
 
-    /* Navbar When You Click Hamburger 3 Strip */
+    /* Navbar Ketika Klik 3 Strip Hamburger */
     nav ul {
         display: flex;
         flex-flow: column nowrap;
         position: absolute;
         gap: 0.75rem;
-        background-color: #A35709;
+        background-color: #1B1A17;
         transform: translateY(-150%);
         width: 100%;
         top: 65px;
         left: 0;
-        z-index: -5;
+        z-index: -7;
         padding-bottom: 35px;
         transition: all .6s ease-in-out;
         box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
@@ -405,16 +401,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         transition: all .4s ease-in-out;
     }
 
-    /* .navbar-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
-    } */
-
-    /* Hamburger's Transition When You Click Hamburger 3 Strip */
+    /* Hamburger Transisi Ketika Klik 3 Strip Hamburger */
     input:checked ~ .navbar-icon .stripe {
         transition: transform .4s ease-in-out;
     }
@@ -469,5 +456,3 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         z-index: -99;
     }
 }
-
-
