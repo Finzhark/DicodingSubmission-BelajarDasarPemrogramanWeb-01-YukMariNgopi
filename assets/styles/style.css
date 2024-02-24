@@ -51,6 +51,7 @@ nav {
 nav ul {
     display: flex;
     gap: 2rem;
+    text-align: center;
 }
 
 nav ul li {
@@ -130,7 +131,7 @@ article h2,
 
 /* Padding untuk Menu */
 article, aside {
-    padding: 30px;
+    padding: 15px 30px;
     scroll-margin-top: 5rem;
 }
 
