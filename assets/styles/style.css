@@ -78,9 +78,11 @@ h2.logo {
     height: 100vh;
     background-image: linear-gradient(180deg, rgba(27, 26, 23, 1), rgba(27, 26, 23, 0.8), rgba(27, 26, 23, 0.3), rgba(27, 26, 23, 0.6), rgba(27, 26, 23, 1)),url("../images/biji-kopi.jpg");
     background-color: #1B1A17;
+    background-position: center;
+    background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
+    /* box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4); */
 }
 
 .jumbotron h1 {
