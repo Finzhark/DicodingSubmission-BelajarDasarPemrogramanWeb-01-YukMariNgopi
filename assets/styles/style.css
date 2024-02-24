@@ -80,6 +80,7 @@ h2.logo {
     background-color: #1B1A17;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
     /* box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4); */
