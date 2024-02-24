@@ -26,6 +26,14 @@ header {
     display: inline;
 }
 
+footer {
+    padding: 20px;
+    color: #FF8303;
+    background-color: #1B1A17;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* Navbar */
 nav {
     display: flex;
@@ -40,7 +48,7 @@ nav {
     top: 0;
 
     box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
-    z-index: 50;
+    /* z-index: 50; */
 }
 
 nav ul {
@@ -69,6 +77,20 @@ nav a:active {
 
 h2.logo {
     color: #FF8303;
+}
+
+input.navbar-button {
+    display: none;
+}
+
+.navbar-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    background-color: #1B1A17;
+    height: 100%;
+    width: 100%;
 }
 
 /* Jumbotron */
@@ -340,7 +362,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         display: flex;
         flex-flow: column nowrap;
         position: absolute;
-        gap: 1rem;
+        gap: 0.75rem;
         background-color: #A35709;
         transform: translateY(-150%);
         width: 100%;
@@ -348,7 +370,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         left: 0;
         z-index: -5;
         padding-bottom: 35px;
-        transition: all .6s ease;
+        transition: all .6s ease-in-out;
         box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
     }
 
@@ -449,24 +471,3 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
 }
 
 
-input.navbar-button {
-    display: none;
-}
-
-.navbar-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -3;
-    background-color: #1B1A17;
-    height: 100%;
-    width: 100%;
-}
-
-footer {
-    padding: 20px;
-    color: #FF8303;
-    background-color: #1B1A17;
-    text-align: center;
-    font-weight: bold;
-}
