@@ -8,7 +8,8 @@ html {
 
 body {
     font-family: "Roboto", Tahoma, sans-serif;
-    background-color: #F0E3CA;
+    /* background-color: #F0E3CA; */
+    background-color: #FF8303;
     margin: 0;
     padding: 0;
 }
@@ -28,7 +29,7 @@ header {
 
 footer {
     padding: 20px;
-    color: #FF8303;
+    color: #F0E3CA;
     background-color: #1B1A17;
     text-align: center;
     font-weight: bold;
@@ -40,6 +41,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #1B1A17;
+    /* opacity: 0; */
+    /* text-align: center; */
     color: #F0E3CA;
     padding: 0.35rem;
     padding-inline: 4rem;
@@ -52,10 +55,15 @@ nav ul {
     display: flex;
     gap: 2rem;
     text-align: center;
+    /* line-height: 5px; */
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     list-style-type: none;
+    /* z-index: -99; */
+    cursor: pointer;
 }
 
 nav a {
@@ -67,27 +75,30 @@ nav a {
 nav a:hover {
     font-weight: bold;
     color: #FF8303;
+    /* padding: 5px; */
 }
 
 nav a:active {
     font-weight: 400;
 }
 
-h2.logo-header {
-    color: #FF8303;
+nav h2.logo-navbar {
+    color: #F0E3CA;
 
 }
 
-input.navbar-button {
+nav input.navbar-button {
     display: none;
 }
 
-.navbar-background {
+/* Hapus saja kalau sudah berhasil */
+nav .navbar-background {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -3;
-    background-color: #1B1A17;
+    /* background-color: #1B1A17; */
+    background-color: azure;
     height: 100%;
     width: 100%;
 }
@@ -267,6 +278,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 20px;
+    background-color: #F0E3CA;
 }
 
 .item {
@@ -275,6 +287,13 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     flex: 0 1 31%;
     min-height: 45vh;
 }
+
+/* h2:hover {
+    color: #F0E3CA;
+    transform: scale(1.03);
+    transition: .5s ease;
+    index:-1;
+} */
 
 /* Perangkat dengan layar lebar 1200px dan di bawahnya */
 @media screen and (max-width: 1200px) {
@@ -354,6 +373,10 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         justify-content: space-between;
     }
 
+    /* .navbar-icon, .logo-header {
+        z-index: 100;
+    } */
+
     /* Navbar Ketika Klik 3 Strip Hamburger */
     nav ul {
         display: flex;
@@ -361,21 +384,22 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         position: absolute;
         gap: 0.75rem;
         background-color: #1B1A17;
-        transform: translateY(-150%);
+        transform: translateY(-100%) ;
         width: 100%;
-        top: 65px;
+        top: 75px;
         left: 0;
-        z-index: -7;
-        padding-bottom: 35px;
+        padding: 20px 0;
         transition: all .6s ease-in-out;
         box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
+        opacity: 0;
     }
 
     nav ul>li {
-        margin-top: 25px;
-        padding-right: 7vw;
         transition: .45s ease-in;
         text-align: center;
+
+        padding-left: 0;
+        padding-right: 0;
     }
 
     nav a {
@@ -390,16 +414,26 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     input:checked ~ ul {
         transform: translateY(0);
         transition: .4s ease-in-out;
+        opacity: 1;
     }
+
+    /* input:checked ~ ul > li {
+        opacity: 1;
+
+        transition: .4s ease-in;
+        
+        visibility: visible;
+    } */
 
     /* Hamburger 3 Strip for Navbar */
     .navbar-icon .stripe {
         width: 43px;
         height: 5px;
-        background-color: #FF8303;
+        background-color: #F0E3CA;
         margin: 5px 0;
         border-radius: 999px;
         transition: all .4s ease-in-out;
+        cursor: pointer;
     }
 
     /* Hamburger Transisi Ketika Klik 3 Strip Hamburger */
@@ -408,16 +442,15 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     }
 
     input:checked ~ .navbar-icon .stripe:nth-child(1) {
-        transform: rotate(-135deg)translate(-8px, -9px);
-        background-color: #FF8303;
+        transform: rotate(-135deg) translate(-8px, -9px);
     }
     
     input:checked ~ .navbar-icon .stripe:nth-child(2) {
-        transform: scale(0)rotate(-60deg);
+        transform: scale(0) rotate(-60deg);
     }
     
     input:checked ~ .navbar-icon .stripe:nth-child(3) {
-        transform: rotate(-45deg)translate(4.5px, -7px);
+        transform: rotate(-45deg) translate(4.5px, -7px);
     }
 
     /* Tentang Kami */
