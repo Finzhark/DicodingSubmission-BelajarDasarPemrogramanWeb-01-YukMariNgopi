@@ -72,14 +72,9 @@ nav a {
     color: #F0E3CA;
 }
 
-nav a:hover {
+nav a:hover, nav a:active {
     font-weight: bold;
     color: #FF8303;
-    /* padding: 5px; */
-}
-
-nav a:active {
-    font-weight: 400;
 }
 
 nav h2.logo-navbar {
@@ -406,7 +401,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         color: #F0E3CA;
     }
 
-    nav a:hover {
+    nav a:hover, nav a:active {
         font-weight: bold;
         color: #F0E3CA;
     }
