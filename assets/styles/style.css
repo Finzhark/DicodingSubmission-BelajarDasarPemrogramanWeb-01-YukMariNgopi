@@ -8,19 +8,22 @@ html {
 
 body {
     font-family: "Roboto", Tahoma, sans-serif;
-    /* background-color: #F0E3CA; */
-    background-color: #FF8303;
+    background-color: #F0E3CA;
     margin: 0;
     padding: 0;
 }
 
 main h2 {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-transform: uppercase;
     font-family: "Caveat Brush", Verdana, Tahoma, sans-serif;
+}
+
+main h3 {
+    font-size: 1.5rem;
 }
 
 header {
@@ -41,13 +44,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #1B1A17;
-    /* opacity: 0; */
-    /* text-align: center; */
     color: #F0E3CA;
     padding: 0.35rem;
     padding-inline: 4rem;
     position: sticky;
     top: 0;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
 }
 
@@ -55,14 +57,12 @@ nav ul {
     display: flex;
     gap: 2rem;
     text-align: center;
-    /* line-height: 5px; */
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
     list-style-type: none;
-    /* z-index: -99; */
     cursor: pointer;
 }
 
@@ -74,36 +74,42 @@ nav a {
 
 nav a:hover, nav a:active {
     font-weight: bold;
-    color: #FF8303;
+    color: #F0E3CA;
+    border-bottom: 3px solid #F0E3CA;
 }
 
-nav h2.logo-navbar {
+nav h2.navbar-logo {
     color: #F0E3CA;
-
 }
 
 nav input.navbar-button {
-    display: none;
+    visibility: hidden;
 }
 
 /* Hapus saja kalau sudah berhasil */
-nav .navbar-background {
+/* nav .navbar-background {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -3;
-    /* background-color: #1B1A17; */
-    background-color: azure;
+    z-index: 0;
+    background-color: #1B1A17;
     height: 100%;
     width: 100%;
-}
+} */
 
 /* Jumbotron */
 .jumbotron {
     font-size: 20px;
     padding: 8rem;
     height: 100vh;
-    background-image: linear-gradient(180deg, rgba(27, 26, 23, 1), rgba(27, 26, 23, 0.8), rgba(27, 26, 23, 0.3), rgba(27, 26, 23, 0.6), rgba(27, 26, 23, 1)),url("../images/biji-kopi.jpg");
+    background-image: 
+        linear-gradient(180deg, 
+            rgba(27, 26, 23, 1), 
+            rgba(27, 26, 23, 0.8), 
+            rgba(27, 26, 23, 0.3), 
+            rgba(27, 26, 23, 0.6), 
+            rgba(27, 26, 23, 1)),
+        url("../images/biji-kopi.jpg");
     background-color: #1B1A17;
     background-position: center;
     background-size: cover;
@@ -125,25 +131,34 @@ nav .navbar-background {
     text-align: center;
 }
 
+article > p {
+    padding-bottom: 25px ;
+    margin-top: -20px;
+}
+
 /* Text Align Center untuk h3 dan h2 dan th */
-/* Cek lagi */
 article h2,
 #menu section h3, 
 #menu th,
 #cara-pesan section h3, 
-#lokasi section h3 {
+#lokasi section h3, article > p {
     text-align: center;
 }
 
-/* Padding untuk Menu */
-article, aside {
+/* Padding untuk Main */
+article, 
+aside {
     padding: 15px 30px;
     scroll-margin-top: 5rem;
 }
 
-/* Menu Minuman Makanan */
-#menu section td:nth-child(2) {
+/* Tampilan Menu Minuman Makanan */
+#menu section table td:nth-child(2) {
     text-align: right;
+}
+
+#menu table tr {
+    line-height: 2rem;
 }
 
 section.food-drink {
@@ -158,34 +173,37 @@ img.food-drink-image {
     object-position: center;
 }
 
-.menu-item {
+#menu .menu-item {
     display: flex;
     justify-content: space-between;
 }
 
-/* Gambar di menu makan */
-img.food-drink-image, #menu section .menu-item table{
+img.food-drink-image, 
+#menu section .menu-item table{
     flex: 1;
     padding: .5rem;
-
 }
 
-/* Gambar untuk Artikel Cara Pesan dan Lokasi*/
-img.how-to-order-image, img.landmark-image {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    object-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    border-radius: 15px;
-}
-
-/* Lokasi */
-#lokasi td {
+/* Tabel Lokasi */
+#lokasi table td {
     text-align: left;
     vertical-align: top;
+    /* background-color: #F0E3CA; */
+    padding: 5px;
+}
+
+#lokasi table th {
+    background-color: #F0E3CA;
+    line-height: 2.2rem;
+    /* border-radius: 99px 99px 0 0; */
+    border-bottom: 4px solid #FF8303;
+    /* padding-bottom: 10px; */
+    font-weight: 600;
+}
+
+#lokasi table{
+    line-height: 1.5rem;
+    margin: 20px 10px;
 }
 
 /* Tentang Kami */
@@ -223,7 +241,7 @@ img.about-us-image {
     text-align: center;
 }
 
-/* General Button */
+/* Button */
 button {
     padding: 0.8rem 2.5rem;
     border: 3px solid transparent;
@@ -255,8 +273,18 @@ button a {
 }
 
 .item > button {
-    margin-top: auto;
     padding: 0.5rem 1rem;
+}
+
+/* Gambar untuk Artikel Cara Pesan dan Lokasi*/
+img.how-to-order-image, 
+img.landmark-image {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
 }
 
 /* 
@@ -265,31 +293,55 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
 */
 .container {
     display: flex;
+    flex-flow: row nowrap;
     gap: 2rem;
     justify-content: space-between;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px;
+    /* margin-bottom: 20px; */
     background-color: #F0E3CA;
 }
 
 .item {
     display: flex;
-    flex-flow: column;
-    flex: 0 1 31%;
-    min-height: 45vh;
+    flex-flow: column nowrap;
+    flex: 0 1 31.5%;
+    justify-content: start;
 }
 
-/* h2:hover {
-    color: #F0E3CA;
-    transform: scale(1.03);
-    transition: .5s ease;
-    index:-1;
-} */
+#member h4, #member li, #member p {
+    text-align: justify;
+}
 
+#member .container {
+    margin: 0 10px;
+    justify-content: center;
+}
+
+#member {
+    background-image: 
+        linear-gradient(180deg, 
+        rgba(163, 87, 9, 1), 
+        rgba(163, 87, 9, 0.5), 
+        rgba(163, 87, 9, 0), 
+        rgba(163, 87, 9, 0.5),
+        rgba(163, 87, 9, 1)),
+        url("../images/background-kopi.png");
+    background-color: #A35709;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #F0E3CA;
+}
+
+#member form {
+    color: #1B1A17;
+}
 /* Perangkat dengan layar lebar 1200px dan di bawahnya */
 @media screen and (max-width: 1200px) {
     .jumbotron p {
@@ -297,7 +349,14 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         color: #F0E3CA;
     }
 
-    #lokasi .container {
+    
+    .container section {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1 1 40%;
+    }
+    
+    .container {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -305,12 +364,11 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         margin-inline: auto;
     }
 
-    #lokasi .container section {
-        display: flex;
-        flex-flow: column wrap;
-        flex: 1 1 40%;
+    #cara-pesan .card,
+    #lokasi .card {
+        max-width: 50vw;
     }
-
+    
     #menu section img {
         width: 80%;
         max-height: 20vh;
@@ -326,10 +384,6 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         flex-flow: column;
         flex: 0 1 31%;
         min-height: 45vh;
-    }
-
-    table {
-        margin: 20px 10px;
     }
 }
 
@@ -350,15 +404,36 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         background-attachment: scroll;
     }
 
-    #lokasi .container, .container {
+    .container {
         display: flex;
-        flex-flow: column wrap;
-        gap: 2rem;
-        justify-content: center;
-        min-height: 40vh;
-        margin-inline: auto;
+        margin: 0 auto;
+        flex-flow:column nowrap;
+        flex: 1 1 50%;
+        justify-content: space-between;
+        align-content: flex-start;
     }
 
+    .item {
+        display: flex;
+    }
+
+    #cara-pesan .card,
+    #lokasi .card {
+        max-width: 100vw;
+    }
+
+    /* img.how-to-order-image {
+        width: 30%;
+        max-height: 60vh;
+        object-fit: cover;
+        object-position: center;
+    } */
+    
+    /* #menu .menu-item {
+        display: flex;
+        justify-content: space-between;
+    } */
+    
     table {
         margin: 20px 10px;
     }
@@ -368,16 +443,17 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         justify-content: space-between;
     }
 
-    /* .navbar-icon, .logo-header {
+    .navbar-hamburger-icon, .navbar-logo {
         z-index: 100;
-    } */
+    }
 
     /* Navbar Ketika Klik 3 Strip Hamburger */
     nav ul {
         display: flex;
         flex-flow: column nowrap;
+        /* justify-content: space-between; */
         position: absolute;
-        gap: 0.75rem;
+        gap: 0rem;
         background-color: #1B1A17;
         transform: translateY(-100%) ;
         width: 100%;
@@ -387,22 +463,16 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         transition: all .6s ease-in-out;
         box-shadow: 0 4px 8px 0 rgba(27, 26, 23, 0.4);
         opacity: 0;
+        visibility: hidden;
     }
 
-    nav ul>li {
+    nav ul > li {
         transition: .45s ease-in;
         text-align: center;
-
-        padding-left: 0;
-        padding-right: 0;
+        padding: 10px 0;
     }
 
     nav a {
-        color: #F0E3CA;
-    }
-
-    nav a:hover, nav a:active {
-        font-weight: bold;
         color: #F0E3CA;
     }
 
@@ -410,18 +480,11 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         transform: translateY(0);
         transition: .4s ease-in-out;
         opacity: 1;
-    }
-
-    /* input:checked ~ ul > li {
-        opacity: 1;
-
-        transition: .4s ease-in;
-        
         visibility: visible;
-    } */
-
+    }
+    
     /* Hamburger 3 Strip for Navbar */
-    .navbar-icon .stripe {
+    .navbar-hamburger-icon .stripe {
         width: 43px;
         height: 5px;
         background-color: #F0E3CA;
@@ -432,19 +495,19 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     }
 
     /* Hamburger Transisi Ketika Klik 3 Strip Hamburger */
-    input:checked ~ .navbar-icon .stripe {
+    input:checked ~ .navbar-hamburger-icon .stripe {
         transition: transform .4s ease-in-out;
     }
 
-    input:checked ~ .navbar-icon .stripe:nth-child(1) {
+    input:checked ~ .navbar-hamburger-icon .stripe:nth-child(1) {
         transform: rotate(-135deg) translate(-8px, -9px);
     }
     
-    input:checked ~ .navbar-icon .stripe:nth-child(2) {
+    input:checked ~ .navbar-hamburger-icon .stripe:nth-child(2) {
         transform: scale(0) rotate(-60deg);
     }
     
-    input:checked ~ .navbar-icon .stripe:nth-child(3) {
+    input:checked ~ .navbar-hamburger-icon .stripe:nth-child(3) {
         transform: rotate(-45deg) translate(4.5px, -7px);
     }
 
