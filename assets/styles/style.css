@@ -184,11 +184,14 @@ img.food-drink-image,
     padding: .5rem;
 }
 
+/* Tabel Umum (lokasi dan menu) */
+table td {
+    vertical-align: top;
+}
+
 /* Tabel Lokasi */
 #lokasi table td {
     text-align: left;
-    vertical-align: top;
-    /* background-color: #F0E3CA; */
     padding: 5px;
 }
 
