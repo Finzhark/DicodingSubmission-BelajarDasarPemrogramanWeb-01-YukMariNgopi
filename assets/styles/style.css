@@ -159,7 +159,7 @@ article > p {
     margin-top: -20px;
 }
 
-/* Tampilan Menu Minuman Makanan */
+/* Tampilan Content Menu Minuman Makanan */
 #menu section table td:nth-child(2) {
     text-align: right;
 }
@@ -221,7 +221,7 @@ location-table td:first-child {
     margin: 20px 10px;
 }
 
-/* Tentang Kami */
+/* Content Tentang Kami */
 .about-us-item {
     display: flex;
     flex-flow: column nowrap;
@@ -251,6 +251,87 @@ location-table td:first-child {
 
 .about-us-table tr th {
     text-align: right;
+}
+
+/* Content Member */
+.member h4, 
+.member li, 
+.member p {
+    text-align: justify;
+}
+
+#member .container {
+    justify-content: center;
+}
+
+#member {
+    background-image: 
+        linear-gradient(180deg, 
+            rgba(163, 87, 9, 1), 
+            rgba(163, 87, 9, 0.55), 
+            rgba(163, 87, 9, 0.55),
+            rgba(163, 87, 9, 1)),
+        url("../images/background-kopi.png");
+    background-color: #A35709;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #F0E3CA;
+}
+
+.member form {
+    color: #1B1A17;
+}
+
+/* Form Member di #member */
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+form > div {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+
+input#gender-female, 
+input#gender-male {
+    margin: 0;
+    padding: 0;
+}
+
+.member .item:first-child, #member h2 {
+    text-shadow: 2px 2px #1B1A17;
+    color: #F0E3CA;
+}
+
+input#name {
+    text-transform: capitalize;
+}
+
+input#email {
+    text-transform: lowercase;
+}
+
+/* Footer */
+footer .social-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer .social-media li a {
+    color: #F0E3CA;
+    font-size: 2rem;
 }
 
 /* Button */
@@ -329,87 +410,6 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     flex-flow: column nowrap;
     flex: 0 1 31.5%;
     justify-content: start;
-}
-
-.member h4, 
-.member li, 
-.member p {
-    text-align: justify;
-}
-
-#member .container {
-    justify-content: center;
-}
-
-#member {
-    background-image: 
-        linear-gradient(180deg, 
-            rgba(163, 87, 9, 1), 
-            rgba(163, 87, 9, 0.55), 
-            rgba(163, 87, 9, 0.55),
-            rgba(163, 87, 9, 1)),
-        url("../images/background-kopi.png");
-    background-color: #A35709;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #F0E3CA;
-}
-
-.member form {
-    color: #1B1A17;
-}
-
-/* Form Member di #member */
-form {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1rem;
-}
-
-form > div {
-    display: flex;
-    flex-flow: column;
-    gap: 0.5rem;
-    /* background-color: #A35709; */
-}
-
-input#gender-female, 
-input#gender-male {
-    margin: 0;
-    padding: 0;
-}
-
-.member .item:first-child, #member h2 {
-    text-shadow: 2px 2px #1B1A17;
-    color: #F0E3CA;
-}
-
-input#name {
-    text-transform: capitalize;
-}
-
-input#email {
-    text-transform: lowercase;
-}
-
-/* Footer */
-footer .social-media {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 1rem 1rem;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-footer .social-media li a {
-    color: #F0E3CA;
-    font-size: 2rem;
 }
 
 /* Perangkat dengan layar lebar 1200px dan di bawahnya */
@@ -513,7 +513,6 @@ footer .social-media li a {
     nav ul {
         display: flex;
         flex-flow: column nowrap;
-        /* justify-content: space-between; */
         position: absolute;
         gap: 0rem;
         background-color: #1B1A17;
