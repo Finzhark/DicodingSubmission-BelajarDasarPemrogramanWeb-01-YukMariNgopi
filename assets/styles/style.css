@@ -222,12 +222,6 @@ location-table td:first-child {
 }
 
 /* Content Tentang Kami */
-.about-us-item {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-}
-
 #tentang-kami .container {
     justify-content: center;
 }
