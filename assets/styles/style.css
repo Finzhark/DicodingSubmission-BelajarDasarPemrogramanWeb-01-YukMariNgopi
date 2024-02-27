@@ -496,7 +496,11 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     #cara-pesan .card,
     #lokasi .card,
     aside #tentang-kami .card {
-        max-width: 100vw;
+        max-width: 300vw;
+    }
+
+    aside #tentang-kami .card {
+        overflow: auto;
     }
 
     table {
