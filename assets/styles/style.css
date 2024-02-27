@@ -435,7 +435,8 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     }
 
     #cara-pesan .card,
-    #lokasi .card {
+    #lokasi .card,
+    #tentang-kami .card {
         max-width: 50vw;
     }
     
@@ -492,7 +493,8 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     }
 
     #cara-pesan .card,
-    #lokasi .card {
+    #lokasi .card,
+    #tentang-kami .card {
         max-width: 100vw;
     }
 
