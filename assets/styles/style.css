@@ -197,7 +197,7 @@ img.food-drink-image,
     line-height: 1.5rem;
 }
 
-location-table td:first-child {
+.location-table td:first-child {
     text-align: right;
 }
 
@@ -288,6 +288,14 @@ input#email {
     justify-content: center;
 }
 
+.about-us-table {
+    width: 100%;
+}
+
+.about-us-table td, .about-us-table th {
+    padding: 10px;
+}
+
 .about-us-table tr{
     line-height: 1.5rem;
 }
@@ -318,7 +326,6 @@ footer .social-media {
     margin: 0;
     padding: 1rem 1rem;
     align-items: center;
-    justify-content: center;
     gap: 1.5rem;
 }
 
@@ -395,6 +402,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     border-radius: 15px;
     padding: 20px;
     background-color: #F0E3CA;
+    overflow: hidden;
 }
 
 .item {
@@ -428,7 +436,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
 
     #cara-pesan .card,
     #lokasi .card,
-    #tentang-kami .card {
+    aside #tentang-kami .item {
         max-width: 50vw;
     }
     
@@ -486,9 +494,8 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
 
     #cara-pesan .card,
     #lokasi .card,
-    #tentang-kami .card {
-        max-width: 150vw;
-        /* max-width: 100vw; */
+    aside #tentang-kami .card {
+        max-width: 100vw;
     }
 
     table {
