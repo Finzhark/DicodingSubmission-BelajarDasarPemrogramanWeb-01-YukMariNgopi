@@ -37,10 +37,7 @@
                 <div class="stripe"></div>
                 <div class="stripe"></div>
             </label>
-
-            <!-- Untuk menutupi proses turunnya navbar saat mode mobile phone -->
-            <div class="navbar-background"></div>
-
+            
             <ul>
                 <li><a href="#">Beranda</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -72,7 +69,7 @@
             <!-- Menu Beverages and Foods / Menu Minum Makan -->
             <article id="menu">
                 <h2>Menu</h2>
-                <p>Sudah tahu mau pesan apa?</p>
+                <p>Apapun makan dan minumnya, semuanya enak. Yuk pilih dulu menunya!</p>
                     
                 <div class="container">
                     <section class="card food-drink">
@@ -183,7 +180,7 @@
                                     <th colspan="2">Lain-lain</th>
                                 </tr>
                                 <tr>
-                                    <td>Jenang</td>
+                                    <td>Kue Cang</td>
                                     <td>Rp10.000</td>
                                 </tr>
                                 <tr>
@@ -241,7 +238,7 @@
                     <section class="card item">
                         <img src="assets/images/jakarta-landmark.jpg" alt="Monas di Jakarta" class="landmark-image">
                         <h3>Jakarta</h3>
-                        <table>
+                        <table class="location-table">
                             <tr>
                                 <th colspan="2">Kota Kasablanka</th>
                             </tr>
@@ -283,7 +280,7 @@
                         <img src="assets/images/surabaya-landmark.jpg" alt="Patung Sura dan Baya di Surabaya" class="landmark-image">
                         <h3>Surabaya</h3>
 
-                        <table>
+                        <table class="location-table">
                             <tr>
                                     <th colspan="2">Jalan Jemursari</th>
                             </tr>
@@ -325,7 +322,7 @@
                         <img src="assets/images/pontianak-landmark.jpeg" alt="Tugu Khatulistiwa di Pontianak" class="landmark-image">
                         <h3>Pontianak</h3>
 
-                        <table>
+                        <table class="location-table">
                             <tr>
                                     <th colspan="2">Ayani Mega Mall</th>
                             </tr>
@@ -360,7 +357,7 @@
                 <div class="container">
                     <!-- <img src="assets/images/biji-kopi.jpg" alt="" class="how-to-order-image"> -->
                     <div class="item">
-                        <h4>Keuntungan bergabung menjadi member "Yuk Mari Ngopi!"</h4>
+                        <h4>Keuntungan bergabung menjadi member "Yuk Mari Ngopi!":</h4>
                         <ul>
                             <li><strong>Diskon 15%</strong> dengan minimal total pesanan Rp300.000</li>
                             <li>Dapat <strong>satu kopi</strong> sebagai hadiah ulang tahun dan tidak wajib pesan</li>
@@ -370,7 +367,7 @@
                     </div>
                     <div class="item card
                     ">
-                        <form method="GET" action="#">
+                        <form method="GET" action="#" class="form">
                             <div>
                                 <label for="name">Nama</label>
                                 <input type="name" id="name" required/>
@@ -383,7 +380,7 @@
     
                             <div>
                                 <label for="telephone">Telepon</label>
-                                <input type="telephone" id="telephone" placeholder="+62xxxxxxxx" required/>
+                                <input type="number" id="telephone" placeholder="+62xxxxxxxx" required/>
                             </div>
     
                             <div>
@@ -395,16 +392,14 @@
                                 <div>
                                     <input type="radio" id="gender-female" name="gender"/>
                                     <label for="gender-male">Perempuan</label>
-    
                                 </div>
                                 <br>
                                
                             </div>
     
                             <div>
-                                <textarea rows="6" cols="22">
-                                    Isi keterangan di sini. Apa saja bebas.
-                                </textarea>                                
+                                <p>Keterangan tambahan</p>
+                                <textarea rows="7" cols="28">Isi keterangan di sini. Apa saja bebas. Boleh minuman kesukaan atau alasan memutuskan untuk menjadi member "Yuk Mari Ngopi!".</textarea>                                
                             </div>
     
                             <button type="submit">Gabung</button>
@@ -419,22 +414,62 @@
         <aside>
             <article id="tentang-kami">
                 <h2>Tentang Kami</h2>
-                <div>
-                    <img src="assets/images/photo-profile.jpg" alt="Foto Profil" class="about-us-image">
-                    <div>
-                        <p>
-                            "Di "Yuk Mari Ngopi", kami menyajikan impian dalam setiap cangkir. Dengan cinta dan perhatian, kami menghadirkan kebahagiaan sederhana dalam setiap teguk, dibuat dari bahan lokal yang segar. Impian kami adalah untuk berbagi kehangatan dari kopi kami dengan para pecinta kopi di dekat dan jauh."
-                        </p>
-                        <caption>Qwerty Ukopi Ilova</caption>
+                <div class="container">
+                    <div class="card about-us-item">
+                        <img src="assets/images/photo-profile.jpg" alt="Foto Profil" class="about-us-image">
+                        <table class="about-us-table">
+                            <tr>
+                                <th colspan="2">C. Finza</th>
+                            </tr>
+                            <tr>
+                                <th>Email:</th>
+                                <td>finzhark.art@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th>Kemampuan:</th>
+                                <td>html, css, js</td>
+                            </tr>
+                            <tr>
+                                <th>Kesukaan:</th>
+                                <td>Kopi susu</td>
+                            </tr>
+                            <tr>
+                                <th>Hobi:</th>
+                                <td>Membaca dokumentasi MDN</td>
+                            </tr>
+                        </table>                          
                     </div>
-                        
                 </div>
             </article>
         </aside>
     </main>
 
     <footer>
-        <p>Terima kasih?</p>
+        <p>Follow kami yuk!</p>
+        <div>
+            <ul class="social-media">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-whatsapp-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <p>Yuk Mari Ngopi! &#169; 2024, C. Finza</p>
     </footer>
 </body>

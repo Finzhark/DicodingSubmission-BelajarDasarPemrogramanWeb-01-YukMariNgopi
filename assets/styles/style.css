@@ -26,6 +26,22 @@ main h3 {
     font-size: 1.5rem;
 }
 
+/* Text Align Center untuk h3 dan h2 dan th */
+article h2,
+#menu section h3, 
+#menu th,
+#cara-pesan section h3, 
+#lokasi section h3, article > p {
+    text-align: center;
+}
+
+/* Padding untuk Main */
+article, 
+aside {
+    padding: 50px;
+    scroll-margin-top: 5rem;
+}
+
 header {
     display: inline;
 }
@@ -136,22 +152,6 @@ article > p {
     margin-top: -20px;
 }
 
-/* Text Align Center untuk h3 dan h2 dan th */
-article h2,
-#menu section h3, 
-#menu th,
-#cara-pesan section h3, 
-#lokasi section h3, article > p {
-    text-align: center;
-}
-
-/* Padding untuk Main */
-article, 
-aside {
-    padding: 15px 30px;
-    scroll-margin-top: 5rem;
-}
-
 /* Tampilan Menu Minuman Makanan */
 #menu section table td:nth-child(2) {
     text-align: right;
@@ -190,58 +190,65 @@ table td {
 }
 
 /* Tabel Lokasi */
-#lokasi table td {
+.location-table td {
     text-align: left;
     padding: 5px;
+    line-height: 1.5rem;
 }
 
-#lokasi table th {
+location-table td:first-child {
+    text-align: right;
+}
+
+.location-table th {
     background-color: #F0E3CA;
     line-height: 2.2rem;
-    /* border-radius: 99px 99px 0 0; */
-    border-bottom: 4px solid #FF8303;
-    /* padding-bottom: 10px; */
+    text-decoration: 4px underline solid #A35709;
+    text-underline-position: under;
     font-weight: 600;
+    border-top: 2px dashed #A35709;
 }
 
-#lokasi table{
-    line-height: 1.5rem;
+.location-table tr:first-child > th {
+    border-top-color: transparent;
+}
+
+/* Margin Tabel Lokasi dan Tentang Kami */
+.location-table,
+.about-us-table {    
     margin: 20px 10px;
 }
 
 /* Tentang Kami */
-img.about-us-image {
-    width: 60%;
-    height: 50vh;
-    object-fit: cover;
-    object-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    border-radius: 15px;
+.about-us-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    overflow: auto;
 }
 
-#tentang-kami div {
-    display: flex;
-    flex-flow: row nowrap;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 0 10vw;
+#tentang-kami .container {
+    justify-content: center;
 }
 
+.about-us-table tr{
+    line-height: 1.5rem;
+}
 
-#tentang-kami div div {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: -5vw;
-    background-color: rgba(27, 26, 23, 1);
-    padding: 20px;
-    color: #F0E3CA;
-    border-radius: 15px;
-    min-width: 50%;
-    min-height: 30vh;
+.about-us-table td {
+    text-align: left;
+}
+
+.about-us-table tr:first-child th {
     text-align: center;
+    background-color: transparent;
+    line-height: 2.2rem;
+    text-decoration: 4px underline solid #A35709;
+    text-underline-position: under;
+}
+
+.about-us-table tr th {
+    text-align: right;
 }
 
 /* Button */
@@ -281,7 +288,8 @@ button a {
 
 /* Gambar untuk Artikel Cara Pesan dan Lokasi*/
 img.how-to-order-image, 
-img.landmark-image {
+img.landmark-image,
+img.about-us-image {
     width: 100%;
     height: 15rem;
     object-fit: cover;
@@ -321,7 +329,6 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
 }
 
 #member .container {
-    margin: 0 10px;
     justify-content: center;
 }
 
@@ -428,18 +435,6 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         max-width: 100vw;
     }
 
-    /* img.how-to-order-image {
-        width: 30%;
-        max-height: 60vh;
-        object-fit: cover;
-        object-position: center;
-    } */
-    
-    /* #menu .menu-item {
-        display: flex;
-        justify-content: space-between;
-    } */
-    
     table {
         margin: 20px 10px;
     }
@@ -516,41 +511,73 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     input:checked ~ .navbar-hamburger-icon .stripe:nth-child(3) {
         transform: rotate(-45deg) translate(4.5px, -7px);
     }
-
-    /* Tentang Kami */
-    img.about-us-image {
-        width: 100%;
-        position: relative;
-        left: -10vw;
-        object-fit: cover;
-        object-position: center;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-        border-radius: 15px;
-        z-index: -99;
-    }
-
-    #tentang-kami div {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        padding: 0 10vw;
-    }
+}
 
 
-    #tentang-kami div div {
-        display: flex;
-        position: relative;
-        left: 10vw;
-        top: -10vh;
-        background-color: rgba(27, 26, 23, 1);
-        padding: 20px;
-        color: #F0E3CA;
-        border-radius: 15px;
-        min-width: 50%;
-        min-height: 30vh;
-        text-align: center;
-        z-index: -99;
-    }
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h4, ul {
+    margin-top: 0;
+}
+
+/* Form Member */
+form > div {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+    /* background-color: #A35709; */
+}
+
+input#gender-female, 
+input#gender-male {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+article h2 {
+    text-shadow: 2px 2px #1B1A17;
+    color: #FF8303;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-top: 0;
+}
+
+#member .item:first-child, #member h2 {
+    text-shadow: 2px 2px #1B1A17;
+    color: #F0E3CA;
+}
+
+input#name {
+    text-transform: capitalize;
+}
+
+input#email {
+    text-transform: lowercase;
+}
+
+footer .social-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer .social-media li a {
+    color: #F0E3CA;
+    font-size: 2rem;
 }
