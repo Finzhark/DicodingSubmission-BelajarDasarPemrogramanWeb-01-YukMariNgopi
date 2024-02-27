@@ -26,6 +26,24 @@ main h3 {
     font-size: 1.5rem;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+h4, ul {
+    margin-top: 0;
+}
+
+article h2 {
+    text-shadow: 2px 2px #1B1A17;
+    color: #FF8303;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-top: 0;
+}
+
 /* Text Align Center untuk h3 dan h2 dan th */
 article h2,
 #menu section h3, 
@@ -102,17 +120,6 @@ nav input.navbar-button {
     visibility: hidden;
 }
 
-/* Hapus saja kalau sudah berhasil */
-/* nav .navbar-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    background-color: #1B1A17;
-    height: 100%;
-    width: 100%;
-} */
-
 /* Jumbotron */
 .jumbotron {
     font-size: 20px;
@@ -182,11 +189,6 @@ img.food-drink-image,
 #menu section .menu-item table{
     flex: 1;
     padding: .5rem;
-}
-
-/* Tabel Umum (lokasi dan menu) */
-table td {
-    vertical-align: top;
 }
 
 /* Tabel Lokasi */
@@ -286,6 +288,11 @@ button a {
     padding: 0.5rem 1rem;
 }
 
+/* Tabel umum (table data) */
+table td {
+    vertical-align: top;
+}
+
 /* Gambar untuk Artikel Cara Pesan dan Lokasi*/
 img.how-to-order-image, 
 img.landmark-image,
@@ -324,7 +331,9 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     justify-content: start;
 }
 
-#member h4, #member li, #member p {
+.member h4, 
+.member li, 
+.member p {
     text-align: justify;
 }
 
@@ -348,9 +357,61 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     color: #F0E3CA;
 }
 
-#member form {
+.member form {
     color: #1B1A17;
 }
+
+/* Form Member di #member */
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+form > div {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+    /* background-color: #A35709; */
+}
+
+input#gender-female, 
+input#gender-male {
+    margin: 0;
+    padding: 0;
+}
+
+.member .item:first-child, #member h2 {
+    text-shadow: 2px 2px #1B1A17;
+    color: #F0E3CA;
+}
+
+input#name {
+    text-transform: capitalize;
+}
+
+input#email {
+    text-transform: lowercase;
+}
+
+/* Footer */
+footer .social-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer .social-media li a {
+    color: #F0E3CA;
+    font-size: 2rem;
+}
+
 /* Perangkat dengan layar lebar 1200px dan di bawahnya */
 @media screen and (max-width: 1200px) {
     .jumbotron p {
@@ -477,7 +538,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
         color: #F0E3CA;
     }
 
-    input:checked ~ ul {
+    nav input:checked ~ ul {
         transform: translateY(0);
         transition: .4s ease-in-out;
         opacity: 1;
@@ -496,88 +557,19 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     }
 
     /* Hamburger Transisi Ketika Klik 3 Strip Hamburger */
-    input:checked ~ .navbar-hamburger-icon .stripe {
+    nav input:checked ~ .navbar-hamburger-icon .stripe {
         transition: transform .4s ease-in-out;
     }
 
-    input:checked ~ .navbar-hamburger-icon .stripe:nth-child(1) {
+    nav input:checked ~ .navbar-hamburger-icon .stripe:nth-child(1) {
         transform: rotate(-135deg) translate(-8px, -9px);
     }
     
-    input:checked ~ .navbar-hamburger-icon .stripe:nth-child(2) {
+    nav input:checked ~ .navbar-hamburger-icon .stripe:nth-child(2) {
         transform: scale(0) rotate(-60deg);
     }
     
-    input:checked ~ .navbar-hamburger-icon .stripe:nth-child(3) {
+    nav input:checked ~ .navbar-hamburger-icon .stripe:nth-child(3) {
         transform: rotate(-45deg) translate(4.5px, -7px);
     }
-}
-
-
-
-p {
-    padding: 0;
-    margin: 0;
-}
-
-h4, ul {
-    margin-top: 0;
-}
-
-/* Form Member */
-form > div {
-    display: flex;
-    flex-flow: column;
-    gap: 0.5rem;
-    /* background-color: #A35709; */
-}
-
-input#gender-female, 
-input#gender-male {
-    margin: 0;
-    padding: 0;
-}
-
-form {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1rem;
-}
-
-article h2 {
-    text-shadow: 2px 2px #1B1A17;
-    color: #FF8303;
-    text-decoration: underline;
-    text-underline-position: under;
-    margin-top: 0;
-}
-
-#member .item:first-child, #member h2 {
-    text-shadow: 2px 2px #1B1A17;
-    color: #F0E3CA;
-}
-
-input#name {
-    text-transform: capitalize;
-}
-
-input#email {
-    text-transform: lowercase;
-}
-
-footer .social-media {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 1rem 1rem;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-footer .social-media li a {
-    color: #F0E3CA;
-    font-size: 2rem;
 }
