@@ -112,8 +112,9 @@ nav a:hover, nav a:active {
     border-bottom: 3px solid #F0E3CA;
 }
 
-nav h2.navbar-logo {
-    color: #F0E3CA;
+nav img.navbar-logo {
+    height: 2rem;
+    margin: 0.83rem;
 }
 
 nav input.navbar-button {
