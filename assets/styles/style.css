@@ -226,7 +226,6 @@ location-table td:first-child {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    overflow: auto;
 }
 
 #tentang-kami .container {
