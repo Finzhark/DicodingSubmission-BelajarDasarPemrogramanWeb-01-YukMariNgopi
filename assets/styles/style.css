@@ -403,6 +403,7 @@ Dipakai oleh Menu Makan, Cara Pesan, dan Lokasi
     padding: 20px;
     background-color: #F0E3CA;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .item {
